@@ -186,7 +186,7 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(spacemacs-dark
+   dotspacemacs-themes '(doom-nova moe-light spacemacs-dark
                          spacemacs-light)
 
    ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
@@ -474,9 +474,6 @@ before packages are loaded."
 
    
 ;; 自动打开上次文件
-;;(setq desktop-restore-in-current-display t)
-;;(desktop-save-mode 1)
-;;(setq desktop-restore-frames t) 
 (desktop-save-mode)
 (desktop-read)
  )
@@ -495,7 +492,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (overseer f dash s neotree nameless macrostep helm-xref helm-themes helm-swoop helm-projectile helm-mode-manager helm-make projectile pkg-info epl helm-flx flx helm-descbinds helm-ag evil-mc elisp-slime-nav auto-compile packed ace-jump-helm-line helm avy helm-core popup which-key use-package pcre2el hydra evil goto-chg undo-tree dotenv-mode diminish bind-map bind-key async))))
+    (moe-theme which-key use-package pcre2el overseer neotree nameless macrostep hydra helm-xref helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag evil-mc elisp-slime-nav dotenv-mode doom-themes diminish bind-map auto-compile ace-jump-helm-line))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
