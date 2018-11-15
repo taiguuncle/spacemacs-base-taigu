@@ -1,1 +1,1 @@
-# spacemacs-base-taigu
+taiguuncle's spacemacs-base config file
